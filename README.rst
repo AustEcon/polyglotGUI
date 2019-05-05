@@ -1,29 +1,18 @@
-PolyglotGUI: Bitcoin protocols made easy
+Polyglot: Bitcoin protocols made easy
 =====================================
 Documentation: https://austecon.github.io/polyglot/
-
 Powered by BitSV: https://github.com/AustEcon/bitsv
+Powered by Polyglot
 
-Powered by polyglot
-
-PolyglotGUI Mission
+Polyglot Mission
 ----------------
 
-Is to lower barriers to entry everybody and make metanet FUN!
-
-* So why python and why polyglot?
-
-    - Python is one of the main languages taught at 1st year university level and is arguably the most used language in the scientific disciplines where programming is seen as an adjunct to their core business.
-    - Python is also the language often taught to 1st, 2nd year CompSci / Software Engineering students to teach some basic principles of programming because the syntax is incredibly easy to understand and productivity is incredible.
-    - Bitcoin is difficult enough for people to wrap their heads around and *truly* understand as it is. Python, an interpreted language, is the perfect medium through which people can learn by doing and experimenting; running lines of code in real time and seeing what happened.
-    - Building webpages for 5 cents per megabyte is a huge breakthrough for ushering in a new wave of innovation on the metanet. Until now a cheap digital ocean cloud server at $5/month was your best bet - which isn't that bad - but then there's the steep learning curve of setting up an apache server and setting up your SFTP and SSH shells etc.
-    - I want to make the process so easy that it is basically three lines of code... and you spend the rest of your time learning html, css (which can be mostly learned in one or two weekends) and then adding in some js.
-    - Give the path to your files and simply upload to metanet! DONE!
+Is to lower barriers to entry for everybody and make metanet FUN!
 
 * Is it just going to be for uploading files?
 
     - No I have much bigger plans for this.
-    - This library is designed to be the easiest way for pythonistas to interface with all of the various, growing bitcoin metanet protocols.
+    - This library is designed to be the easiest way for anybody to interface with all of the various, growing bitcoin metanet protocols.
 
     Data Carriage:
 
@@ -50,9 +39,6 @@ Is to lower barriers to entry everybody and make metanet FUN!
 
 
 * A PyQt5 GUI will accompany this library to lower barriers to entry even further to non-technical folk https://github.com/AustEcon/polyglotGUI
-
-
-# TODO - badges...
 
 
 What needs fixing
