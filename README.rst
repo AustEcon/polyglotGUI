@@ -105,6 +105,34 @@ You can now simply double-click on the polyglot_GUI.py icon and it will run
 A powershell script is included "install.ps1" if you right-click and run this it performs steps 4 and 5 for you.
 
 
+On Linux / Ubuntu (very similar)
+
+1) clone this repository
+
+.. code-block:: bash
+
+    $ git clone https://github.com/AustEcon/polyglotGUI.git
+
+2) install virtualenv (I will leave that task to you) then create a python3 virtualenv
+
+.. code-block:: bash
+
+    $ virtualenv -p /user/bin/python3 venv
+
+3) Change directory
+
+.. code-block:: bash
+
+    $ source venv/bin/activate
+    (venv) $ pip install -r requirements.txt
+
+4) Run the application with python3
+
+.. code-block:: bash
+
+    (venv) $ python3 polyglotGUI/polyglotGUI/polyglot_GUI.py
+
+
 Documentation
 -------------
 coming...
