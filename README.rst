@@ -51,7 +51,7 @@ What needs fixing
 Examples
 --------
 
-- Code examples...
+
 
 
 Features (Planned)
@@ -61,9 +61,9 @@ Features (Planned)
 - BCAT:// (for multimedia up to 310mb uncompressed, 110GB with nested gzip) - https://bcat.bico.media/
 - Bottle (https://bottle.bitdb.network/) (native metanet) refs and mainstream urls for:
 
-	- B:// (ref. by txid)
-	- C:// (ref. by sha256 hash of content)
-	- D:// (ref. by dynamic state - linked to identity system)
+    - B:// (ref. by txid)
+    - C:// (ref. by sha256 hash of content)
+    - D:// (ref. by dynamic state - linked to identity system)
 - AIP (https://github.com/BitcoinFiles/AUTHOR_IDENTITY_PROTOCOL)
 - other ID protocols (e.g. Ryan X. Charles of Money Button has been working hard on this area)
 - MAP protocol for linking all kinds of different protocols together (powerful)
@@ -72,21 +72,47 @@ Features (Planned)
 Installation
 ------------
 
-Polyglot is distributed on `PyPI` as a universal wheel and is available on Linux/macOS
-and Windows and supports Python 3.5+. ``pip`` >= 8.1.2 is required.
+I intend to make this into a .exe but pyinstaller is giving me grief under such time pressure! - but for the purposes of this CoinGeek Hackathon...
+
+On Windows:
+
+1) install the latest python3 and make sure you tick the box to install pip and add python to system path.
+2) install git for windows https://gitforwindows.org/
+3) open up a directory that you want to download this repository to and:
 
 .. code-block:: bash
 
-    $ pip install polyglot # pip3 if pip is Python 2 on your system.
+    $ git clone https://github.com/AustEcon/polyglotGUI.git
+
+4) install virtualenv for python (optional) and create a virtualenv "my_env".
+Then "activate" the virtual environment (don't change directories in-between steps 3 and 4)
+
+.. code-block:: powershell
+
+    > pip install virtualenv
+    > python.exe -m virtualenv my_env
+    > .\my_env\Scripts\activate
+
+5) use pip to install requirements; then run the application
+
+.. code-block:: powershell
+
+    > pip install -r .\polyglotGUI\requirements.txt
+    > python.exe .\polyglotGUI\polyglotGUI\polyglot_GUI.py
+
+You can now simply double-click on the polyglot_GUI.py icon and it will run
+
+A powershell script is included "install.ps1" if you right-click and run this it performs steps 4 and 5 for you.
+
 
 Documentation
 -------------
-Docs are hosted by Github Pages and are automatically built and published by Travis after every successful commit to Polyglot's master branch.
+coming...
 
 
 Credits
 -------
-
+- CoinGeek for hosting an awesome Hackathon
 
 Donate
 --------
