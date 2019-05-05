@@ -1,4 +1,4 @@
-import polyglot
+from polyglotGUI import polyglot
 import os
 
 my_path = os.path.abspath(os.path.dirname(__file__))
@@ -11,7 +11,3 @@ class TestUpload:
     def testfile_to_binary(self):
         binary = polyglot.Upload.file_to_binary(PATH_TO_SMALL_JPG)
         assert type(binary) == bytes
-
-
-
-
