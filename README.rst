@@ -38,9 +38,6 @@ Is to lower barriers to entry for everybody and make metanet FUN!
     - A.N.N.E. protocol by Mr Scatmann - https://medium.com/@bsmith12251960/a-n-n-e-the-alpha-testing-begins-545f809c6129 (eagerly awaited)
 
 
-* A PyQt5 GUI will accompany this library to lower barriers to entry even further to non-technical folk https://github.com/AustEcon/polyglotGUI
-
-
 What needs fixing
 -----------------
 
@@ -51,8 +48,10 @@ What needs fixing
 Examples
 --------
 
-
-
+.. figure:: examples/1_welcome_screen.jpg
+.. figure:: examples/2_activated_test_key.jpg
+.. figure:: examples/3_browse_for_file.jpg
+.. figure:: examples/4_successful_send.jpg
 
 Features (Planned)
 ------------------
@@ -64,6 +63,7 @@ Features (Planned)
     - B:// (ref. by txid)
     - C:// (ref. by sha256 hash of content)
     - D:// (ref. by dynamic state - linked to identity system)
+
 - AIP (https://github.com/BitcoinFiles/AUTHOR_IDENTITY_PROTOCOL)
 - other ID protocols (e.g. Ryan X. Charles of Money Button has been working hard on this area)
 - MAP protocol for linking all kinds of different protocols together (powerful)
