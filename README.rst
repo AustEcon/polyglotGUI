@@ -48,10 +48,12 @@ What needs fixing
 Examples
 --------
 
-.. figure:: examples/1_welcome_screen.jpg
-.. figure:: examples/2_activated_test_key.jpg
-.. figure:: examples/3_browse_for_file.jpg
-.. figure:: examples/4_successful_send.jpg
+.. figure:: examples/1_welcome_screen.png
+.. figure:: examples/2_activated_test_key.png
+.. figure:: examples/3_browse_for_file.png
+.. figure:: examples/4_successful_send.png
+
+See the uploaded image at https://bico.media/2e1926453b3143e88f1214ac422d0683f92cf030c2d16451fc1ede5661b692d4
 
 Features (Planned)
 ------------------
