@@ -43,7 +43,7 @@ setup(
         'Programming Language :: Python :: Implementation :: CPython',
     ],
 
-    install_requires=['bitsv', 'requests', 'pyqt5-tools', 'PyQt5'],
+    install_requires=['bitsv', 'requests', 'PyQt5'],
     extras_require={
         'cli': ('appdirs', 'click', 'privy', 'tinydb'),
         'cache': ('lmdb', ),

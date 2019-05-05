@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from polyglotGUI import polyglot
 import bitsv
 import polyglot
 import webbrowser
