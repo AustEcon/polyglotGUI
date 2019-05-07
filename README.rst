@@ -2,7 +2,7 @@ Polyglot: Bitcoin protocols made easy
 =====================================
 Documentation: https://austecon.github.io/polyglot/
 Powered by BitSV: https://github.com/AustEcon/bitsv
-Powered by Polyglot
+Powered by Polyglot https://github.com/AustEcon/polyglot
 
 Polyglot Mission
 ----------------
@@ -19,7 +19,7 @@ Is to lower barriers to entry for everybody and make metanet FUN!
     - B:// (for multimedia up to 100kb) - https://github.com/unwriter/B
     - BCAT:// (for multimedia up to 310mb uncompressed, 110GB with nested gzip) - https://bcat.bico.media/
 
-    Endpoints:
+    Endpoint managers for html and web development:
 
     - bottle browser (https://bottle.bitdb.network/) (native metanet) browser and urls for mainstream browsers / 3rd party servers:
 
@@ -37,11 +37,18 @@ Is to lower barriers to entry for everybody and make metanet FUN!
     - MAP protocol for linking all kinds of different protocols together (powerful)
     - A.N.N.E. protocol by Mr Scatmann - https://medium.com/@bsmith12251960/a-n-n-e-the-alpha-testing-begins-545f809c6129 (eagerly awaited)
 
+What works
+-----------
+- Installation instructions on Linux and Windows 10
+- B:// protocol uploading tab works but please bear in mind that it will consolidate all of your utxos! (fixed in https://github.com/AustEcon/polyglot prior to hackathon deadline - but this GUI has one of the older copies)
+
 
 What needs fixing
 -----------------
+- A "polyglot engine" transplant" from the other repo at https://github.com/AustEcon/polyglot to:
 
-- This README and many other things...
+    - Prevent utxo consolidation on uploading
+    - Get bcat protocol working
 
 ----------------------------
 
