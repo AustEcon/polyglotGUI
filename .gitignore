@@ -5,6 +5,7 @@ __pycache__
 /.cache
 /.idea
 /polyglotGUI/.idea
+/polyglotGUI/polyglotGUI.spec
 /.coverage
 /.pytest_cache
 /polyglot.egg-info
