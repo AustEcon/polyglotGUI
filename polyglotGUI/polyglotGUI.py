@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\polyglot_icons_and_renaming_objects.ui'
+# Form implementation generated from reading ui file '.\base_ui.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -11,13 +11,12 @@ import bitsv
 import polyglot
 import webbrowser
 import os
-
-my_path = os.path.abspath(os.path.dirname(__file__))
+import resources_rc
 
 # ICONS
-SUCCESS_ICON = os.path.join(my_path, "./icons/png/001-success.png")
-ERROR_ICON = os.path.join(my_path, "./icons/png/002-error.png")
-GLOTTIS_ICON = os.path.join(my_path, "./icons/png/mouth.png")
+SUCCESS_ICON = ":/icons/png/001-success.png"
+ERROR_ICON = ":/icons/png/002-error.png"
+GLOTTIS_ICON = ":/icons/png/mouth.png"
 
 SUPPORTED_EXTENSIONS = [
     # text
@@ -31,7 +30,6 @@ SUPPORTED_EXTENSIONS = [
 BROWSER_URL_ENDPOINTS = {
     'BICODOTMEDIA': 'https://bico.media/'
 }
-
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -469,28 +467,16 @@ class Ui_MainWindow(object):
         print(priv_key)
         file = self.file_name_lineEdit.text()
         print(file)
-        txid = ''
-
-        # Make rawtx
-        uploader = polyglot.Upload(priv_key)
-        print(uploader.get_unspents())
-        rawtx = uploader.b_create_rawtx_from_file_ezmode(file)
-
-        # FIXME - ARE YOU SURE? DIALOGUE BOX NEEDS TO GO HERE...
 
         # Broadcast
-        txid = bitsv.network.services.BitIndex.broadcast_rawtx(rawtx)['data']['txid']  # FIXME - will need updating to handle bcat://
+        uploader = polyglot.Upload(priv_key)
+        txid = uploader.upload_b(file)
 
         # Primes the View Content Button
         self.LATEST_TXID = txid
         url = self.DEFAULT_VIEWER_URL + "/" + txid
 
-        print(self.LATEST_TXID)
-        print(self.DEFAULT_VIEWER_URL)
-        print(url)
-
         # FIXME - only handles one txid currently and only setup for b:// NOT bcat:// (YET)
-        print(txid)
         self.log_to_plainTextEdit("Success!\n"
                                   "Your file has been uploaded via the {} protocol\n".format('b://') +
                                   "txid: " + txid + "\n\n"
@@ -501,30 +487,23 @@ class Ui_MainWindow(object):
         # FIXME - on broadcast list out
         priv_key = self.private_key_lineEdit_2.text()
         file = self.file_name_lineEdit_2.text()
-        txid = ''
-
-        # Make rawtx
-        uploader = polyglot.Upload(priv_key)
-
-        # FIXME - Change from b --> bcat!
-        rawtx = uploader.b_create_tx_from_file_easy_mode(file)
-
-        # FIXME - ARE YOU SURE? DIALOGUE BOX NEEDS TO GO HERE...
 
         # Broadcast
-        txid = bitsv.network.services.BitIndex.broadcast_rawtx(rawtx)['data']['txid']  # FIXME - will need updating to handle bcat://
+        uploader = polyglot.Upload(priv_key)
+        txid = uploader.upload_bcat(file)
+
+        # FIXME - ARE YOU SURE? DIALOGUE BOX NEEDS TO GO HERE...
 
         # Primes the View Content Button
         self.LATEST_TXID_2 = txid
         url = self.DEFAULT_VIEWER_URL + "/" + txid
 
         # FIXME - only handles one txid currently and only setup for b:// NOT bcat:// (YET)
-        print(txid)
-        self.log_to_plainTextEdit("Success!\n"
-                                  "Your file has been uploaded via the {} protocol\n".format('bcat://') +
-                                  "txid: " + txid + "\n\n"
-                                  "click on 'View Content' button to go to:\n" +
-                                  "url: " + url)
+        self.log_to_plainTextEdit_2("Success!\n"
+                                    "Your file has been uploaded via the {} protocol\n".format('bcat://') +
+                                    "txid: " + txid + "\n\n"
+                                    "click on 'View Content' button to go to:\n" +
+                                    "url: " + url)
 
 
 if __name__ == "__main__":

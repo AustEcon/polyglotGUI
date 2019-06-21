@@ -1,0 +1,7 @@
+<RCC>
+  <qresource>
+    <file>icons/png/001-success.png</file>
+    <file>icons/png/002-error.png</file>
+    <file>icons/png/mouth.png</file>
+  </qresource>
+</RCC>

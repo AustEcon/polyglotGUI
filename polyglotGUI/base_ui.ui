@@ -26,8 +26,8 @@
    <string>Polyglot</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>C:/Users/donha/Pictures/polyglot/polyglot icons/png/tongue.png</normaloff>C:/Users/donha/Pictures/polyglot/polyglot icons/png/tongue.png</iconset>
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/png/mouth.png</normaloff>:/icons/png/mouth.png</iconset>
   </property>
   <property name="animated">
    <bool>false</bool>
@@ -90,7 +90,7 @@
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>C:/Users/donha/Pictures/polyglot/polyglot icons/png/002-error.png</pixmap>
+               <pixmap resource="resources.qrc">:/icons/png/002-error.png</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -181,7 +181,7 @@
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>C:/Users/donha/Pictures/polyglot/polyglot icons/png/002-error.png</pixmap>
+               <pixmap resource="resources.qrc">:/icons/png/002-error.png</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -262,7 +262,7 @@ B:// protocol is for files &lt;100kb.</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>C:/Users/donha/Pictures/polyglot/polyglot icons/png/002-error.png</pixmap>
+               <pixmap resource="resources.qrc">:/icons/png/002-error.png</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -353,7 +353,7 @@ B:// protocol is for files &lt;100kb.</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>C:/Users/donha/Pictures/polyglot/polyglot icons/png/002-error.png</pixmap>
+               <pixmap resource="resources.qrc">:/icons/png/002-error.png</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -481,7 +481,9 @@ See spec at: https://bcat.bico.media/</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>activate_pushButton</sender>
